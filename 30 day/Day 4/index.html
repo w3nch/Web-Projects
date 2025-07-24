@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Game - Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="overlay">
+        <div class="gen-password-show">
+            <h1 class="print-password ">Generated Password</h1>
+            <button class="copy-btn">Copy</button>
+            <button class="new-pass-btn">Reset</button>
+
+        </div>
+        <div class="container">
+            <div class="pass-options">
+                <h2>Character Options</h2>
+                <label><input type="checkbox" id="special-char" /> [!@#$%]</label>
+                <label><input type="checkbox" id="upper-char" /> [A-Z]</label>
+                <label><input type="checkbox" id="lower-char" /> [a-z]</label>
+                <label><input type="checkbox" id="number-char" /> [0-9]</label>
+                <label><input type="checkbox" id="all-char" /> All Characters</label>
+            </div>
+
+            <div class="pass-length">
+                <label for="length">Password Length: <span id="range-value">1</span></label>
+                <input type="range" id="length" min="1" max="100" value="1" />
+            </div>
+        </div>
+    </div>
+    <script type="module" src="logic.js"></script>
+
+</body>
+
+</html>
