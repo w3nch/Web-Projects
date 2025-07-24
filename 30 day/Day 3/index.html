@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="start-screen" id="startScreen">
+            <h1>Welcome to the Quiz Game</h1>
+            <p>Select how many questions you want to attempt:</p>
+            <select id="questionCount">
+                <option value="5" selected>5 Questions</option>
+                <option value="10">10 Questions</option>
+                <option value="15">15 Questions</option>
+                <option value="20">20 Questions</option>
+            </select>
+            <button id="startQuizBtn">Start Quiz</button>
+        </div>
+
+        <div class="quiz-container" style="display: none;">
+            <div class="quiz-header">
+                <h1>Quiz Game</h1>
+                <p>Test your knowledge with this fun quiz!</p>
+            </div>
+            <div class="quiz-content">
+                <div class="question-container">
+                    <h2 id="question">Question will appear here</h2>
+                </div>
+                <div class="options-container">
+                    <button class="option" id="option1">Option 1</button>
+                    <button class="option" id="option2">Option 2</button>
+                    <button class="option" id="option3">Option 3</button>
+                    <button class="option" id="option4">Option 4</button>
+                </div>
+                <div class="navigation-buttons">
+                    <button id="btn-next" class="nav-button">Next</button>
+                </div>
+                <div class="result-container" id="resultContainer" style="display: none;">
+                    <h2 id="resultMessage"></h2>
+                    <p>Your score: <span id="score"></span></p>
+                    <button id="btn-restart" class="nav-button">Restart Quiz</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="logic.js"></script>
+</body>
+
+</html>
