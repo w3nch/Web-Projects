@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quotes</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+ <main class="container">
+    <div class="search-box">
+        <input type="text" id="search-input" placeholder="Search for a topic..." aria-label="Search for quotes" />
+        <button id="search-btn" aria-label="Search quotes">
+            <i class="fas fa-search"></i>
+        </button>
+    </div>
+
+    <section class="quote-box" aria-labelledby="quote">
+        <i class="fas fa-quote-left" aria-hidden="true"></i>
+        <p id="quote">"Be grateful that you're alive in the age where Wrench is alive."</p>
+        <i class="fas fa-quote-right" aria-hidden="true"></i>
+    </section>
+
+    <button id="new-quote-btn" aria-label="Get a new quote">New Quote</button>
+
+    <footer class="author">
+        <p id="author">- Wrench L</p>
+    </footer>
+
+    <div class="social-media">
+        <a href="#" id="twitter" target="_blank" aria-label="Share on Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </div>
+</main>
+
+
+    <script type="module" src="logic.js"></script>
+</body>
+
+</html>
